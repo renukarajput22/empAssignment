@@ -1,0 +1,14 @@
+clean
+compile
+reload
+cd ..
+reload
+run
+run 9005
+clear
+clean
+update
+reload
+run
+run 9006
+run 9002

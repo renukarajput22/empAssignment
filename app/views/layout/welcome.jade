@@ -1,0 +1,22 @@
+html
+head
+title my jade template
+script(type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
+script(type='text/javascript' src = '/assets/add.js')
+body
+h1 Enter your information
+form(method='post' id='addForm')
+	|	Emp Id :
+	br
+	input(type='text' name='id')
+	br
+	|	Name:
+	br
+	input(type='text' name='name')
+	br
+	|	Salary :
+	br
+	input(type='text' name='salary')
+	br
+	input(type='button' value='Add' id="addButton")
+

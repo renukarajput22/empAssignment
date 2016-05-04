@@ -1,0 +1,15 @@
+html
+head
+title my jade template
+script(type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
+script(type='text/javascript' src = '/assets/delete.js')
+body
+p Enter data to delete
+form(method='post' id = 'deleteForm')
+	select(name='dropdown')
+		option(value='' disabled='disabled' selected='selected') Select one
+		option(value='id') By EmpID
+		option(value='name') By Name
+		option(value='salary') By Salary
+	input(type='text' name='input')
+	input(type='button' value='Delete' id = 'deleteButton')

@@ -1,0 +1,16 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET      /                           controllers.Application.index
+POST     /welcome                    controllers.Application.welcome
+POST     /done                       controllers.AddController.input
+POST     /searchPage                 controllers.Application.search
+POST     /searchResult               controllers.SearchController.find
+POST     /deletePage                 controllers.Application.del
+POST    /deleteResult                controllers.DeleteController.delete
+POST    /updatePage                  controllers.Application.up
+POST    /updateResult                controllers.UpdateController.update
+
+GET        /assets/*file             controllers.Assets.at(path="/public", file)
